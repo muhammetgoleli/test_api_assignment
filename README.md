@@ -1,16 +1,15 @@
 # API Çalışması
+ 
 
-Bu projede, /auth endpoint'i request geldiğinde data, sisteme daha önce kayıtlı değilse create ediyor ve cevap olarak config ve abonelik durumu dönüyor.  
-
-- Proje, Laravel Sail ortamında geliştirildi 
+- Laravel Sail ortamında geliştirildi 
 
 - Veritabanı olarak MySQL kullanıldı.
 
-- Laravel Sanctum, kimlik doğrulama sistemi kullanıldı.
+- Sanctum kimlik doğrulama sistemi kullanıldı.
 
 - Veritabanı işlemleri için Eloquent ORM kullanıldı.
 
-- Database migration ve Request validation kullanıldı.
+- Database migration ve Request validation eklendi.
 
 - Listeleme için Yajra Datatables kullanıldı.
 
@@ -24,9 +23,9 @@ Bu projede, /auth endpoint'i request geldiğinde data, sisteme daha önce kayıt
 
 Proje, API endpoint'leri üzerinden çalışır ve kullanımı şu şekildedir:
 
-- `/auth`: Cihaz her açıldığında kullanıcının abonelik durumunu ve varsa temel cihaz yapılandırma bilgilerini döndürür
+- `/auth`: Cihaz her açıldığında kullanıcının abonelik durumunu ve varsa temel cihaz yapılandırma bilgilerini döndürür.
 
-- `/subscription`: Satın alma işleminden sonra abonelik bilgilerini döndürür. Satın alma işleminin hangi cihazdan yapıldığı tespit edilir.
+- `/subscription`: Satın alma işleminden sonra abonelik bilgilerini döndürür. Satın alma işleminin hangi cihazdan yapıldığını tespit eder ve kimlik doğrulamasını gerçekleştirir.
 
 - `/chat`: Kullanıcının abonelik ve kredi kontrolü yapıldıktan sonra ChatGPT botundan response döndürür.
 
